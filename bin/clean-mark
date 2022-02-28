@@ -55,7 +55,7 @@ function readStream(stream) {
 
   function formatOutput(dict) {
     const stat = `paragraph=${s.paragraphCount(dict.text)} sentences=${s.sentenceCount(dict.text)}, words=${s.wordCount(dict.text)}`
-    return `${mark[0]}\nlink: ${dict.url}\ntitle: ${dict.title}\ndescription: ${dict.description}\nkeywords: ${dict.keywords}\nauthor: ${dict.author}\ndate: ${dict.date}\npublisher: ${dict.publisher}\nstats: ${stat}\n${mark[1]}\n${dict.text}`
+    return `${mark[0]}\nlink: ${dict.url}\ntitle: ${dict.title}\ndescription: ${dict.description}\nkeywords: ${dict.keywords}\nauthor: ${dict.author}\ndate: ${dict.date}\npublisher: ${dict.publisher}\nlang: ${dict.lang}\nstats: ${stat}\n${mark[1]}\n${dict.text}`
   }
 
   if (argv._ && argv._.length) {
